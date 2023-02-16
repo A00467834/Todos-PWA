@@ -8,7 +8,39 @@
         <link rel="stylesheet" href="/styles.css">
         <link rel="manifest" href="/manifest.json">
     </head>
-    \<body>
-        
+    <body>
+        <div>
+            <div class="header">
+                <img src="./todo-icon-x512.png" width="75px" />
+                <h1>Todo PWA</h1>
+            </div>
+            <h3>Vishnu Priyan Mahendran</h3>
+        </div>
+    
+        <hr />
+    
+        <div>
+            <form>
+                <label for="taskName">Task Name</label>
+                <input type="text" id="taskName" name="taskName" placeholder="Task name">
+    
+                <label for="dueDate">Due Date</label>
+                <input type="text" id="dueDate" name="dueDate" placeholder="Due date of task">
+    
+                <label for="assignedTo">Assigned To:</label>
+                <input type="text" id="assignedTo" name="assignedTo" placeholder="Assigned to ??">
+    
+                <input type="submit" value="Add item">
+            </form>
+        </div>
+    
+        <hr />
+    
+        <div id="taskList"></div>
     </body>
+
+    <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+    <script src="/db.js"></script>
+    <script src="/index.js"></script>
+
 </html>
